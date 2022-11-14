@@ -6,8 +6,8 @@
     "SYMBOL": "ETH",
     "ID": 1
   },
-  "NFT_NAME": "Lines and Dots",
-  "SYMBOL": "LAD",
+  "NFT_NAME": "Questionable Memes",
+  "SYMBOL": "MEME",
   "MAX_SUPPLY": 1000,
   "WEI_COST": 75000000000000000,
   "DISPLAY_COST": 0.075,
