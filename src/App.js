@@ -225,7 +225,7 @@ function App() {
           <StyledImg
             alt={"example"}
             src={"/config/images/example.gif"}
-            style={{ transform: "scaleX(-1)" }}
+            style={{ transform: "scaleX(1)" }}
           />
         </s.Container>
             <s.TextTitle
@@ -236,7 +236,7 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY} minted so far
             </s.TextTitle>
             <s.TextDescription
               style={{
@@ -245,7 +245,7 @@ function App() {
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+                Smart contract: {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
             <s.SpacerSmall />
@@ -271,13 +271,14 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Each {CONFIG.SYMBOL} is  "FREE!" .
+                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Small gas fees apply.
+                  gas fees apply.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
