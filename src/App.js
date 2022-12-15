@@ -59,7 +59,7 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 100%;
+  width: 60%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -248,7 +248,7 @@ function App() {
                 Smart contract: {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
-            <s.SpacerSmall />
+            <s.SpacerXSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
@@ -261,7 +261,7 @@ function App() {
                 >
                   You can still find {CONFIG.NFT_NAME} on
                 </s.TextDescription>
-                <s.SpacerSmall />
+                <s.SpacerXSmall />
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                   {CONFIG.MARKETPLACE}
                 </StyledLink>
@@ -275,12 +275,8 @@ function App() {
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  gas fees apply.
-                </s.TextDescription>
-                <s.SpacerSmall />
+                
+                
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
@@ -292,7 +288,7 @@ function App() {
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
                     </s.TextDescription>
-                    <s.SpacerSmall />
+                    <s.SpacerXSmall />
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();
@@ -376,9 +372,9 @@ function App() {
                 )}
               </>
             )}
-            <s.SpacerMedium />
+           
           </s.Container>
-          <s.SpacerLarge />
+          
           
         </ResponsiveWrapper>
         
