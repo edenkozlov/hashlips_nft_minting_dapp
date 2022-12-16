@@ -223,13 +223,15 @@ function App() {
             }}
           ><s.Container flex={1} jc={"center"} ai={"center"}>
          
-          <s.SpacerLarge/>
+          
           <StyledImg
             alt={"example"}
             src={"/config/images/example.gif"}
             style={{ transform: "scaleX(1)" }}
           />
-          
+          <s.SpacerLarge/>
+          <s.SpacerLarge/>
+          <s.SpacerLarge/>
           
         </s.Container>
             <s.TextTitle
