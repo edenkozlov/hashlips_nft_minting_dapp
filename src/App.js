@@ -80,6 +80,7 @@ export const StyledImg = styled.img`
   background-color: var(--accent);
   border-radius: 5%;
   width: 200px;
+  
   @media (min-width: 900px) {
     width: 250px;
   }
@@ -92,6 +93,7 @@ export const StyledImg = styled.img`
 export const StyledLink = styled.a`
   color: var(--secondary);
   text-decoration: none;
+  font-size: 15px;
 `;
 
 function App() {
@@ -204,10 +206,10 @@ function App() {
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         
-        <s.SpacerXSmall />
+        
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           
-          <s.SpacerXSmall />
+        
           <s.Container
             flex={2}
             jc={"center"}
@@ -220,19 +222,20 @@ function App() {
               
             }}
           ><s.Container flex={1} jc={"center"} ai={"center"}>
-         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-          <s.SpacerXSmall />
+         
+          <s.SpacerLarge/>
           <StyledImg
             alt={"example"}
             src={"/config/images/example.gif"}
             style={{ transform: "scaleX(1)" }}
-            
           />
+          
+          
         </s.Container>
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 20,
+                fontSize: 30,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
@@ -287,7 +290,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect to the {CONFIG.NETWORK.NAME} network
+                      Connect to the {CONFIG.NETWORK.NAME} network with the button below ↓
                     </s.TextDescription>
                     <s.SpacerXSmall />
                     <StyledButton
