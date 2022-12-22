@@ -229,9 +229,6 @@ function App() {
             src={"/config/images/example.gif"}
             style={{ transform: "scaleX(1)" }}
           />
-          <s.SpacerLarge/>
-          <s.SpacerLarge/>
-          <s.SpacerLarge/>
           
         </s.Container>
             <s.TextTitle
@@ -292,7 +289,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect to the {CONFIG.NETWORK.NAME} network with the button below ↓
+                      Connect to the {CONFIG.NETWORK.NAME} network↓
                     </s.TextDescription>
                     <s.SpacerXSmall />
                     <StyledButton
